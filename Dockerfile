@@ -10,7 +10,7 @@ COPY *.go ./
 
 EXPOSE 3000
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /snook-server-app
+RUN CGO_ENABLED=0 GOOS=linux go build -o /lighthouse-service
 
 
 CMD ["/lighthouse-service"]
