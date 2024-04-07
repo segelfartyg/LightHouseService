@@ -14,7 +14,7 @@ func main() {
 
 	router.GET("/interval", GetInterval)
 
-	router.Run("localhost:3000")
+	router.Run(":3000")
 }
 
 func Ping(c *gin.Context) {
